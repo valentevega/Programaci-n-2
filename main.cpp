@@ -1,5 +1,5 @@
 #include <iostream>
-#include "getinteger.cpp"
+#include "input.cpp"
 
 int getInteger();
 
