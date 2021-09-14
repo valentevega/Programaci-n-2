@@ -28,6 +28,7 @@
 				"-g",
 				"${file}",
 				"-o",
+				//"${workspaceFolder}\\*.cpp",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
 			"options": {
