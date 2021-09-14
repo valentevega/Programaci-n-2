@@ -1,8 +1,6 @@
 #include <iostream>
 #include "input.cpp"
 
-int getInteger();
-
 int main ()
 {
     int x { getInteger() };
