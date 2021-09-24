@@ -1,5 +1,5 @@
 #include <iostream>
-#include "add.hpp"
+#include "add.h"
 
 int main ()
 {

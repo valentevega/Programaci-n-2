@@ -1,5 +1,5 @@
 #include <iostream>
-#include "input.hpp"
+#include "input.h"
 
 int main ()
 {
