@@ -14,5 +14,4 @@ void writeAnswer(int n)
 {
     std::cout << "La suma es: " << n << "\n";
 }
-
 #endif

@@ -9,5 +9,4 @@ int main ()
     int x {readNumber() + readNumber()};
     writeAnswer(x);
     return 0;
-
 }
