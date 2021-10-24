@@ -5,16 +5,19 @@
 //Función de Operaciones a realizar
 int Operacion( double Saldo )
 {
-    std::cout << "¿Qué operación quiere realizar? \n";
-    std::cout << "1. Retirar \n";
-    std::cout << "2. Depositar \n";
-    std::cout << "3. Consultar Saldo \n";
-    std::cout << "4. Transferir \n";
     int OP{};
-    std::cin >> OP;
-    double cant{};
 
-    switch(OP)
+    while (OP > 0 || OP < 4 )
+    {
+        std::cout << "¿Qué operación quiere realizar? \n";
+        std::cout << "1. Retirar \n";
+        std::cout << "2. Depositar \n";
+        std::cout << "3. Consultar Saldo \n";
+        std::cout << "4. Transferir \n";
+        std::cin >> OP;
+        double cant{};
+
+        switch(OP)
     {
         case 1:
             std::cout << "Tu saldo disponible es: " << Saldo << "\n";
@@ -39,6 +42,7 @@ int Operacion( double Saldo )
             std::cout << "Ingrese una opción de las mostradas. ";
             break;
            
+    }
     }
     return 0;
 }
