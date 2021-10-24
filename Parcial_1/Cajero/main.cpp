@@ -20,7 +20,7 @@ int Operacion( double Saldo )
         switch(OP)
     {
         case 1:
-            std::cout << "Tu saldo disponible es: " << Saldo << "\n";
+            std::cout << "Tienes disponible: " << Saldo << "\n";
             std::cout << "¿Cuánto quieres retirar? \n";
             std::cin >> cant;
             Saldo = Saldo - cant;
@@ -28,7 +28,6 @@ int Operacion( double Saldo )
             std::cout << "Queda en tu cuenta: " << Saldo << "\n";
             break;
         case 2:
-            std::cout << "Tu saldo disponible es: " << Saldo << "\n";
             std::cout << "¿Cuánto quieres depositar? \n";
             std::cin >> cant;
             Saldo = Saldo + cant;
@@ -36,7 +35,7 @@ int Operacion( double Saldo )
             std::cout << "Queda en tu cuenta: " << Saldo << "\n";
             break;
         case 3:
-            std::cout << "Tu saldo disponible es: " << Saldo << "\n";
+            std::cout << "Tu saldo total es: " << Saldo << "\n";
             break;
         default:
             std::cout << "Ingrese una opción de las mostradas. ";
