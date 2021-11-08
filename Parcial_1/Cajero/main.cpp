@@ -5,15 +5,15 @@
 //Función de Operaciones a realizar
 int Operacion( double Saldo )
 {
-    int OP{};
-
-    while (OP > 0 || OP < 4 )
+    int OP{0};
+0
+    while (OP == 0 || OP == 3 )
     {
         std::cout << "¿Qué operación quiere realizar? \n";
         std::cout << "1. Retirar \n";
         std::cout << "2. Depositar \n";
         std::cout << "3. Consultar Saldo \n";
-        std::cout << "4. Transferir \n";
+        std::cout << "4. Salir \n";
         std::cin >> OP;
         double cant{};
 
@@ -37,8 +37,11 @@ int Operacion( double Saldo )
         case 3:
             std::cout << "Tu saldo total es: " << Saldo << "\n";
             break;
+        case 4:
+            break;    
         default:
             std::cout << "Ingrese una opción de las mostradas. ";
+            OP = 0;
             break;
            
     }
