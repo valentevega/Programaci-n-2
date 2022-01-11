@@ -7,14 +7,15 @@ int Operacion( double Saldo )
 {
     int OP{0};
     bool s = false;
-    while (OP < 4)
+    while (OP < 6)
     {
         std::cout << "¿Que operacion quiere realizar? \n";
         std::cout << "1. Retirar \n";
         std::cout << "2. Depositar \n";
         std::cout << "3. Consultar Saldo \n";
         std::cout << "4. Transferir \n";
-        std::cout << "5. Salir \n";
+        std::cout << "5. Recargar Saldo \n";
+        std::cout << "6. Salir \n";
         std::cin >> OP;
         double cant{};
 
@@ -53,6 +54,25 @@ int Operacion( double Saldo )
         case 4:
             break;
         case 5:
+        {
+            std::cout << "¿Qué cantidad quiere recargar? \n";
+            std::cout << "$20   $50   $100   $200   $500   $1000 \n";
+            int recarga{};
+            std::cin >> recarga;
+            if (recarga == 20 || recarga == 50 || recarga == 100 || recarga == 200 || recarga == 500 || recarga == 1000)
+            {
+                Saldo = Saldo - recarga;
+
+                std::cout << "Ingrese el número:";
+                std::string num;
+                std::cin >> num;
+                std::cout << "Recarga exitosa \n";
+                std::cout << "Queda en tu cuenta: " << Saldo << "\n";
+            }
+            
+            break;
+        }
+        case 6:
             break;
         default:
             std::cout << "Ingrese una opcion de las mostradas. ";
